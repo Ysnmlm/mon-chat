@@ -5,21 +5,32 @@ body {
 }
 
 h1 {
-  color: #0088cc;
+  background: #0088cc;
+  color: white;
+  padding: 10px;
 }
 
-input {
-  padding: 8px;
+#message {
+  width: 70%;
+  padding: 10px;
+  margin: 20px;
   font-size: 16px;
 }
 
 button {
-  padding: 8px 12px;
+  padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
 }
 
-ul {
+#liste {
   list-style: none;
-  padding: 0;
+  padding: 0 20px;
+}
+
+#liste li {
+  background: white;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
 }

@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f0f2f5;
+  height: 100vh;
 }
 
 #app {
@@ -13,12 +13,12 @@ body {
   height: 100vh;
 }
 
-/* CONTACTS */
+/* Colonne contacts */
 #contacts {
-  width: 260px;
-  background: #111;
+  width: 250px;
+  background: #1e1e2f;
   color: white;
-  padding: 15px;
+  padding: 10px;
 }
 
 #contacts h2 {
@@ -26,69 +26,61 @@ body {
 }
 
 #contact-list {
+  list-style: none;
   padding: 0;
 }
 
 #contact-list li {
-  list-style: none;
   padding: 10px;
-  margin-bottom: 5px;
   cursor: pointer;
   border-radius: 6px;
 }
 
-#contact-list li:hover,
-#contact-list li.active {
+#contact-list li:hover {
   background: #333;
 }
 
-/* CHAT */
+/* Zone chat */
 #chat {
   flex: 1;
   display: flex;
   flex-direction: column;
+  background: #f4f4f4;
 }
 
 #chat-title {
-  background: #1e88e5;
+  padding: 15px;
+  background: #1976d2;
   color: white;
-  padding: 12px;
   margin: 0;
 }
 
 #messages {
   flex: 1;
-  padding: 15px;
   list-style: none;
+  padding: 10px;
   overflow-y: auto;
 }
 
 #messages li {
-  max-width: 70%;
-  padding: 8px 12px;
-  margin-bottom: 8px;
-  border-radius: 8px;
   background: white;
-}
-
-.me {
-  margin-left: auto;
-  background: #dcf8c6;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 5px;
 }
 
 #input-zone {
   display: flex;
   padding: 10px;
-  background: #eee;
+  background: #ddd;
 }
 
-#input-zone input {
+#message {
   flex: 1;
   padding: 8px;
-  font-size: 16px;
 }
 
-#input-zone button {
-  margin-left: 8px;
+button {
   padding: 8px 15px;
+  margin-left: 5px;
 }

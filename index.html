@@ -5,21 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mon Chat</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="manifest" href="manifest.json" />
 </head>
 <body>
-  <h1>Mon Chat</h1>
 
-  <input id="message" type="text" placeholder="Écris un message" />
-  <button onclick="envoyer()">Envoyer</button>
+<div id="app">
+  <aside id="contacts">
+    <h2>Contacts</h2>
+    <ul id="contact-list"></ul>
+  </aside>
 
-  <ul id="liste"></ul>
+  <main id="chat">
+    <h2 id="chat-title">Sélectionne un contact</h2>
+    <ul id="messages"></ul>
 
-  <script src="app.js"></script>
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("sw.js");
-    }
-  </script>
+    <div id="input-zone">
+      <input id="message" type="text" placeholder="Écris un message" />
+      <button onclick="envoyer()">Envoyer</button>
+    </div>
+  </main>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>

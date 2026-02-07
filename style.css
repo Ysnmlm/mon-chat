@@ -1,36 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  background: #e5e5e5;
+  background: #f0f2f5;
+}
+
+#app {
+  display: flex;
+  height: 100vh;
+}
+
+/* CONTACTS */
+#contacts {
+  width: 260px;
+  background: #111;
+  color: white;
+  padding: 15px;
+}
+
+#contacts h2 {
+  margin-top: 0;
+}
+
+#contact-list {
+  padding: 0;
+}
+
+#contact-list li {
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+#contact-list li:hover,
+#contact-list li.active {
+  background: #333;
+}
+
+/* CHAT */
+#chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#chat-title {
+  background: #1e88e5;
+  color: white;
+  padding: 12px;
   margin: 0;
 }
 
-h1 {
-  background: #0088cc;
-  color: white;
-  padding: 10px;
-}
-
-#message {
-  width: 70%;
-  padding: 10px;
-  margin: 20px;
-  font-size: 16px;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-#liste {
+#messages {
+  flex: 1;
+  padding: 15px;
   list-style: none;
-  padding: 0 20px;
+  overflow-y: auto;
 }
 
-#liste li {
+#messages li {
+  max-width: 70%;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
   background: white;
-  margin: 10px 0;
+}
+
+.me {
+  margin-left: auto;
+  background: #dcf8c6;
+}
+
+#input-zone {
+  display: flex;
   padding: 10px;
-  border-radius: 5px;
+  background: #eee;
+}
+
+#input-zone input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+#input-zone button {
+  margin-left: 8px;
+  padding: 8px 15px;
 }
